@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Articles</h1>
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Para1</th>
+      <th>Para2</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead> -->
+
+<!--   <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.para1 %></td>
+        <td><%= article.para2 %></td>
+        <td><%= link_to 'Show', article %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> -->
+
+
+
+<% @articles.each do |article| %>
+  <p><strong>Title:</strong><br><%= article.title %></P>
+  <p><strong>Paragraph1:</strong><br><%= article.para1 %></P>
+  <p><strong>Paragraph2:</strong><br><%= article.para2 %></P>
+  <p><%= link_to 'Show', article %><%= link_to 'Edit', edit_article_path(article) %><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></P>
+  <p><%= image_tag article.photo.url(:medium) %></P>
+<% end %>
+
+
+
+<br>
+
+<%= link_to 'New Article', new_article_path %>
