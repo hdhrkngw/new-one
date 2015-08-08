@@ -1,20 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<!DOCTYPE <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Rew-generation</title>
-  <script src="js/jQuery-2.1.4.min.js"></script>
-  <script src="js/style1.js"></script>
-  <script src="js/style2.js"></script>
-  <script src="js/style3.js"></script>
-  <script type="text/javascript" src="infiniteslide.js"></script>
-  <script type="text/javascript" src="jquery.pause.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
   <div class="beforewrap">
     <div class="title">
       <div class="pannelleft00">
@@ -25,6 +12,7 @@
       </div>
     </div>
   </div>
+
   <div class="wrap">
     <div class="top">
       <p>Rew-generation<span>ー留学のその先を伝えるメディアー</span></p>
@@ -32,13 +20,13 @@
     <div id="nav">
       <img src="images/nav.png">
       <div id="aboutus">
-        <a href="#"><img src="images/abus.png"></a>
+        <a href="#"><%= image_tag("abus.png") %></a>
       </div>
       <div id="article">
-        <a href="#"><img src="images/article.png"></a>
+        <a href="#"><%= image_tag("article.png") %></a>
       </div>
       <div id="contact">
-        <a href="#"><img src="images/con.png"></a>
+        <a href="#"><%= image_tag("con.png") %></a>
       </div>
     </div>
     
@@ -46,7 +34,7 @@
     <ul>
       <li class="pickup">
         <a href="Rew-generation-article.html">
-              <img src="images/trip04.jpg" alt="" />
+              <%= image_tag("trip04.jpg") %>
               <figcaption>
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
             <p>昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを、YouTubeチャンネル「AsapTHOUGHT」に掲載された動画から紹介。</p>
@@ -55,7 +43,7 @@
       </li>
       <li class="pickup">
         <a href="Rew-generation-article.html">
-              <img src="images/trip05.jpg" alt="" />
+              <%= image_tag("trip05.jpg") %>
               <figcaption>
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
             <p>昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを、YouTubeチャンネル「AsapTHOUGHT」に掲載された動画から紹介。</p>
@@ -64,7 +52,7 @@
       </li>
       <li class="pickup">
         <a href="Rew-generation-article.html">
-              <img src="images/trip04.jpg" alt="" />
+              <%= image_tag("trip04.jpg") %>
               <figcaption>
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
             <p>昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを、YouTubeチャンネル「AsapTHOUGHT」に掲載された動画から紹介。</p>
@@ -73,7 +61,7 @@
       </li>
       <li class="pickup">
         <a href="Rew-generation-article.html">
-              <img src="images/trip05.jpg" alt="" />
+              <%= image_tag("trip05.jpg") %>
               <figcaption>
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
             <p>昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを、YouTubeチャンネル「AsapTHOUGHT」に掲載された動画から紹介。</p>
@@ -83,18 +71,18 @@
     </ul>
     </div>
     <div class="recommend">
-      <img src="images/recommend.png">
+      <%= image_tag("recommend.png") %>
       <div class="recommend01">
-        <img src="images/recommend01.jpg">
+        <%= image_tag("recommend01.png") %>
       </div>
       <div class="recommend02">
-        <img src="images/recommend02.jpg">
+        <%= image_tag("recommend02.png") %>
       </div>
       <div class="recommend03">
-        <img src="images/recommend03.jpg">
+        <%= image_tag("recommend03.png") %>
       </div>
       <div class="recommend04">
-        <img src="images/recommend04.jpg">
+        <%= image_tag("recommend04.png") %>
       </div>
     </div>
 
@@ -107,7 +95,7 @@
         </div>
         <div class="pannel01">
           <div class="col-3">
-            <a href="Rew-generation-article.html"><img src="images/trip04.jpg"></a>
+            <a href="Rew-generation-article.html"><%= image_tag("trip04.jpg") %></a>
           </div>
           <div class="pannelcontent">
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
@@ -117,7 +105,7 @@
             <p class="article">昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを紹介。</br><span>詳細はこちら</span></p>
           </div>
           <div class="read01">
-            <img src="images/readhover.jpg">
+            <%= image_tag("readhover.jpg") %>
           </div>
           <p class="linkarea01">
             <a href="Rew-generation-article.html">More...</a>
@@ -132,7 +120,7 @@
         </div>
         <div class="pannel02">
           <div class="col-3">
-            <a href="Rew-generation-article.html"><img src="images/trip04.jpg"></a>
+            <a href="Rew-generation-article.html"><%= image_tag("trip04.jpg") %></a>
           </div>
           <div class="pannelcontent">
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
@@ -142,7 +130,7 @@
             <p class="article">昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを紹介。</br><span>詳細はこちら</span></p>
           </div>
           <div class="read02">
-            <img src="images/readhover.jpg">
+            <%= image_tag("readhover.jpg") %>
           </div>
           <p class="linkarea02">
             <a href="Rew-generation-article.html">More...</a>
@@ -157,7 +145,7 @@
         </div>
         <div class="pannel03">
           <div class="col-3">
-            <a href="Rew-generation-article.html"><img src="images/trip04.jpg"></a>
+            <a href="Rew-generation-article.html"><%= image_tag("trip04.jpg") %></a>
           </div>
           <div class="pannelcontent">
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
@@ -167,7 +155,7 @@
             <p class="article">昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを紹介。</br><span>詳細はこちら</span></p>
           </div>
           <div class="read03">
-            <img src="images/readhover.jpg">
+            <%= image_tag("readhover.jpg") %>
           </div>
           <p class="linkarea03">
             <a href="Rew-generation-article.html">More...</a>
@@ -182,7 +170,7 @@
         </div>
         <div class="pannel04">
           <div class="col-3">
-            <a href="Rew-generation-article.html"><img src="images/trip04.jpg"></a>
+            <a href="Rew-generation-article.html"><%= image_tag("trip04.jpg") %></a>
           </div>
           <div class="pannelcontent">
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
@@ -192,7 +180,7 @@
             <p class="article">昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを紹介。</br><span>詳細はこちら</span></p>
           </div>
           <div class="read04">
-            <img src="images/readhover.jpg">
+            <%= image_tag("readhover.jpg") %>
           </div>
           <p class="linkarea04">
             <a href="Rew-generation-article.html">More...</a>
@@ -207,7 +195,7 @@
         </div>
         <div class="pannel05">
           <div class="col-3">
-            <a href="Rew-generation-article.html"><img src="images/trip04.jpg"></a>
+            <a href="Rew-generation-article.html"><%= image_tag("trip04.jpg") %></a>
           </div>
           <div class="pannelcontent">
             <h3>旅行者必見！時差ボケにならない「5つのコツ」。</h3>
@@ -217,7 +205,7 @@
             <p class="article">昼間が眠くなり楽しめず、夜に目が覚めて眠れずに辛い思いをする。特にトラベル歴が長い人は、時差ボケで苦しんだ経験も多いはず。ここでは、そんな時差ボケを克服するための5つのコツを紹介。</br><span>詳細はこちら</span></p>
           </div>
           <div class="read05">
-            <img src="images/readhover.jpg">
+            <%= image_tag("readhover.jpg") %>
           </div>
           <p class="linkarea05">
             <a href="Rew-generation-article.html">More...</a>
@@ -238,38 +226,33 @@
       </div>
     </div>
     <footer>
-      <img src="images/footer.png">
+      <%= image_tag("footer.png") %>
         <div class="what">
           <a href="#">
             <div id="what">
-              <img src="images/what.png">
+              <%= image_tag("what.png") %>
             </div>
           </a>
         </div>
         <div class="team">
           <a href="#">
             <div id="team">
-              <img src="images/team.png">
+              <%= image_tag("team.png") %>
             </div>
           </a>
         </div>
         <div class="e-mail">
           <a href="#">
             <div id="e-mail">
-              <img src="images/e-mail.png">
+              <%= image_tag("e-mail.png") %>
             </div>
           </a>
         </div>
     </footer>
 
-
-
-
-
   </div>
 
-</body>
-</html>
+
 
 
 
@@ -281,6 +264,11 @@
   <p><%= image_tag article.photo.url(:medium) %></P>
 <% end %>
 
+
+<a href="#"><%= image_tag("bike01.jpg") %></a>
+
+<!-- <p>test picture below</p>
+<img src="../images/bike01.jpg"> -->
 
 
 <br>
